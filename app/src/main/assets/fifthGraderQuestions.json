@@ -1,0 +1,122 @@
+[
+  {
+    "questionText": "What is the smallest prime number?",
+    "correctAnswer": "2"
+  },
+  {
+    "questionText": "Which planet is known as the Red Planet?",
+    "correctAnswer": "Mars"
+  },
+  {
+    "questionText": "What is the main ingredient in a traditional pizza dough?",
+    "correctAnswer": "Flour"
+  },
+  {
+    "questionText": "What is 25 multiplied by 4?",
+    "correctAnswer": "100"
+  },
+  {
+    "questionText": "Which ocean is the largest on Earth?",
+    "correctAnswer": "Pacific Ocean"
+  },
+  {
+    "questionText": "What do plants absorb from the sun to make food?",
+    "correctAnswer": "Sunlight"
+  },
+  {
+    "questionText": "Which of these is NOT a mammal?",
+    "correctAnswer": "Shark"
+  },
+  {
+    "questionText": "How many sides does a hexagon have?",
+    "correctAnswer": "6"
+  },
+  {
+    "questionText": "Which language is primarily spoken in Brazil?",
+    "correctAnswer": "Portuguese"
+  },
+  {
+    "questionText": "What is the freezing point of water in degrees Celsius?",
+    "correctAnswer": "0"
+  },
+  {
+    "questionText": "What do bees collect from flowers to make honey?",
+    "correctAnswer": "Nectar"
+  },
+  {
+    "questionText": "If you have 3 apples and you eat 2, how many do you have left?",
+    "correctAnswer": "1"
+  },
+  {
+    "questionText": "What is the name of the biggest continent on Earth?",
+    "correctAnswer": "Asia"
+  },
+  {
+    "questionText": "Which gas do humans breathe in to live?",
+    "correctAnswer": "Oxygen"
+  },
+  {
+    "questionText": "What is the capital city of the United States?",
+    "correctAnswer": "Washington D.C."
+  },
+  {
+    "questionText": "How many legs does a spider have?",
+    "correctAnswer": "8"
+  },
+  {
+    "questionText": "Which instrument has keys, pedals, and strings?",
+    "correctAnswer": "Piano"
+  },
+  {
+    "questionText": "What do you call animals that eat only plants?",
+    "correctAnswer": "Herbivores"
+  },
+  {
+    "questionText": "What is the largest planet in our solar system?",
+    "correctAnswer": "Jupiter"
+  },
+  {
+    "questionText": "If a triangle has sides of 3 cm, 4 cm, and 5 cm, what type of triangle is it?",
+    "correctAnswer": "Right-angled"
+  },
+  {
+    "questionText": "Which famous scientist developed the theory of gravity after seeing a falling apple?",
+    "correctAnswer": "Isaac Newton"
+  },
+  {
+    "questionText": "What is the opposite of the word 'increase'?",
+    "correctAnswer": "Decrease"
+  },
+  {
+    "questionText": "Which organ pumps blood throughout your body?",
+    "correctAnswer": "Heart"
+  },
+  {
+    "questionText": "How many hours are there in 3 days?",
+    "correctAnswer": "72"
+  },
+  {
+    "questionText": "What is the process by which water turns into vapor?",
+    "correctAnswer": "Evaporation"
+  },
+  {
+    "questionText": "Which element do we breathe out after using oxygen?",
+    "correctAnswer": "Carbon Dioxide"
+  },
+  {
+    "questionText": "What color do you get when you mix red and blue?",
+    "correctAnswer": "Purple"
+  },
+  {
+    "questionText": "Which is NOT a type of cloud?",
+    "correctAnswer": "Volcanus"
+  },
+  {
+    "questionText": "What is 100 divided by 25?",
+    "correctAnswer": "4"
+  },
+  {
+    "questionText": "Which famous landmark is found in Paris, France?",
+    "correctAnswer": "Eiffel Tower"
+  }
+]

@@ -1,0 +1,285 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/background"
+    tools:context=".AddEventActivity">
+
+    <LinearLayout
+        android:id="@+id/headingLayout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="25dp"
+        android:background="@drawable/heading"
+        android:gravity="center"
+        android:orientation="vertical"
+        android:paddingTop="25dp"
+        android:paddingBottom="8dp">
+
+        <ImageView
+            android:id="@+id/logoImage"
+            android:layout_width="48dp"
+            android:layout_height="48dp"
+            android:contentDescription="@string/app_logo"
+            android:src="@drawable/beige_logo" />
+
+
+    </LinearLayout>
+
+    <!--  Title  -->
+    <TextView
+        android:id="@+id/addEventTitle"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/headingLayout"
+        android:layout_centerHorizontal="true"
+        android:fontFamily="@font/concert_one_regular"
+        android:text="@string/add_an_event"
+        android:textSize="35sp"
+        android:textStyle="bold" />
+
+    <View
+        android:layout_width="100dp"
+        android:layout_height="2dp"
+        android:layout_below="@id/addEventTitle"
+        android:layout_centerHorizontal="true"
+        android:background="@color/darkGreen" />
+
+
+
+    <!--  Event Name  -->
+    <EditText
+        android:id="@+id/eventName"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/addEventTitle"
+        android:layout_marginLeft="20dp"
+        android:layout_marginRight="20dp"
+        android:fontFamily="@font/concert_one_regular"
+        android:hint="@string/name_of_event"
+        android:paddingTop="10dp"
+
+        android:textColor="@color/darkGreen" />
+    <!--  Role of Volunteer  -->
+    <EditText
+        android:id="@+id/volunteerRole"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/eventName"
+        android:layout_marginLeft="20dp"
+        android:layout_marginRight="20dp"
+        android:fontFamily="@font/concert_one_regular"
+        android:hint="@string/role_of_volunteer"
+        android:paddingTop="10dp"
+        android:textColor="@color/darkGreen" />
+    <!--  Location  -->
+    <EditText
+        android:id="@+id/eventLocation"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/volunteerRole"
+        android:layout_marginLeft="20dp"
+        android:layout_marginRight="20dp"
+        android:fontFamily="@font/concert_one_regular"
+        android:hint="@string/location"
+        android:paddingTop="10dp"
+        android:textColor="@color/darkGreen" />
+    <!--  Requirements Title  -->
+    <TextView
+        android:id="@+id/reqTitle"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/eventLocation"
+        android:layout_marginLeft="20dp"
+        android:layout_marginTop="20dp"
+        android:fontFamily="@font/concert_one_regular"
+        android:text="@string/requirements"
+        android:textSize="20sp"
+        android:textStyle="bold" />
+    <!--  Gender Row (Label + RadioButtons side by side)  -->
+    <LinearLayout
+        android:id="@+id/genderRow"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/reqTitle"
+        android:layout_alignParentStart="true"
+        android:layout_marginStart="20dp"
+        android:layout_marginTop="12dp"
+        android:orientation="horizontal">
+
+        <TextView
+            android:id="@+id/genderLabel"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_vertical"
+            android:fontFamily="@font/concert_one_regular"
+            android:paddingEnd="10dp"
+            android:text="@string/gender"
+            android:textSize="20sp" />
+
+        <RadioGroup
+            android:id="@+id/genderGroup"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <RadioButton
+                android:id="@+id/genderMale"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:fontFamily="@font/concert_one_regular"
+                android:text="Male"
+                android:textColor="@color/darkGreen" />
+
+            <RadioButton
+                android:id="@+id/genderFemale"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:fontFamily="@font/concert_one_regular"
+                android:text="@string/female"
+                android:textColor="@color/darkGreen" />
+
+            <RadioButton
+                android:id="@+id/genderAll"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:fontFamily="@font/concert_one_regular"
+                android:text="@string/both"
+                android:textColor="@color/darkGreen" />
+        </RadioGroup>
+    </LinearLayout>
+    <!--  Age  -->
+    <EditText
+        android:id="@+id/ageInput"
+        android:layout_width="120dp"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/genderRow"
+        android:layout_alignParentStart="true"
+        android:layout_marginStart="20dp"
+        android:fontFamily="@font/concert_one_regular"
+        android:hint="@string/age"
+        android:inputType="number"
+        android:paddingTop="10dp"
+        android:textColor="@color/darkGreen" />
+    <!--  Nationality  -->
+
+    <TextView
+        android:id="@+id/label"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/ageInput"
+        android:layout_marginLeft="20dp"
+        android:textSize="20dp"
+        android:layout_marginTop="10dp"
+        android:fontFamily="@font/concert_one_regular"
+        android:text="Nationality" />
+
+    <Spinner
+        android:id="@+id/nationalitySpinner"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginRight="20dp"
+        android:layout_marginLeft="20dp"
+        android:layout_below="@id/label"
+        android:fontFamily="@font/concert_one_regular" />
+
+
+    <LinearLayout
+        android:id="@+id/achRow"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/nationalitySpinner"
+        android:layout_alignParentStart="true"
+        android:layout_marginTop="20dp"
+        android:orientation="horizontal">
+
+        <TextView
+            android:id="@+id/achLabel"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_vertical"
+            android:layout_marginStart="20dp"
+            android:fontFamily="@font/concert_one_regular"
+            android:paddingEnd="10dp"
+            android:text="@string/eligibility_of_nachievements"
+            android:textSize="20sp" />
+
+        <RadioGroup
+            android:id="@+id/achGroup"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <RadioButton
+                android:id="@+id/achEligible"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:fontFamily="@font/concert_one_regular"
+                android:text="@string/required"
+                android:textColor="@color/darkGreen" />
+
+            <RadioButton
+                android:id="@+id/achNotEligible"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:fontFamily="@font/concert_one_regular"
+                android:text="Not Required"
+                android:textColor="@color/darkGreen" />
+        </RadioGroup>
+    </LinearLayout>
+    <!--  Date Picker  -->
+    <EditText
+        android:id="@+id/eventDate"
+        android:layout_width="180dp"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/achRow"
+        android:layout_alignParentStart="true"
+        android:layout_marginStart="20dp"
+        android:fontFamily="@font/concert_one_regular"
+        android:hint="@string/date"
+        android:onClick="onPickDate"
+        android:paddingTop="10dp" />
+    <!--  Volunteering Hours  -->
+    <EditText
+        android:id="@+id/volunteerHours"
+        android:layout_width="180dp"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/eventDate"
+        android:layout_alignParentStart="true"
+        android:layout_marginStart="20dp"
+        android:fontFamily="@font/concert_one_regular"
+        android:hint="@string/volunteering_hours"
+
+        android:inputType="number"
+
+        android:paddingTop="10dp" />
+    <!--  Points Calculation Info  -->
+    <TextView
+        android:id="@+id/pointsInfo"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/volunteerHours"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="10dp"
+        android:fontFamily="@font/concert_one_regular"
+        android:text="@string/note_1_hr_10_points"
+        android:textColor="#FF3939"
+        android:textSize="20sp" />
+    <!--  Confirm Button  -->
+    <Button
+        android:id="@+id/submitEventBtn"
+        android:layout_width="300dp"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/pointsInfo"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="20dp"
+        android:backgroundTint="@color/lightGreen"
+        android:fontFamily="@font/concert_one_regular"
+        android:onClick="onSubmitEvent"
+        android:text="@string/confirm"
+        android:textColor="@color/darkGreen"
+        android:textSize="20sp" />
+</RelativeLayout>

@@ -1,0 +1,229 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/background"
+    tools:context=".QuizzesActivity">
+
+    <LinearLayout
+        android:id="@+id/headingLayout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="5dp"
+        android:background="@drawable/heading"
+        android:gravity="center"
+        android:orientation="vertical"
+        android:paddingTop="25dp"
+        android:paddingBottom="8dp">
+
+        <ImageView
+            android:id="@+id/logoImage"
+            android:onClick="goToHomePage"
+            android:layout_width="48dp"
+            android:layout_height="48dp"
+            android:contentDescription="App Logo"
+            android:src="@drawable/beige_logo" />
+
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/scoreLayout"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/headingLayout"
+        android:layout_alignParentStart="true"
+        android:layout_marginLeft="20dp"
+        android:gravity="center"
+        android:padding="10dp">
+
+
+        <ImageView
+            android:layout_width="37dp"
+            android:layout_height="25dp"
+            android:src="@drawable/score" />
+
+        <TextView
+            android:id="@+id/score"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:fontFamily="@font/concert_one_regular"
+            android:gravity="center"
+            android:text="0"
+            android:textColor="@color/brown"
+            android:textSize="14sp" />
+    </LinearLayout>
+
+    <TextView
+        android:id="@+id/title"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/scoreLayout"
+        android:layout_marginLeft="20dp"
+        android:layout_marginTop="4dp"
+        android:fontFamily="@font/concert_one_regular"
+        android:text="VolWizzes"
+        android:textColor="@color/darkGreen"
+        android:textSize="40sp"
+        android:textStyle="bold" />
+
+    <TextView
+        android:id="@+id/subtitle"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/title"
+        android:layout_marginLeft="20dp"
+        android:fontFamily="@font/concert_one_regular"
+        android:text="Show off your knowledge!"
+        android:textColor="@color/darkGreen"
+        android:textSize="16dp" />
+
+    <ScrollView
+        android:id="@+id/imageScroll"
+        android:layout_above="@id/menuBar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/subtitle"
+        android:layout_marginTop="18dp"
+        android:fillViewport="true">
+
+        <!--A scroll view can only handle
+        ONE child, bro can't take care of children
+        sooo we will have a single LinearLayout that
+        contains each horizontal layout-->
+        <LinearLayout
+            android:layout_width="350dp"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="25dp"
+            android:orientation="vertical">
+
+            <!--FIRST LINEAR LAYOUT, which is the first row-->
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+                <LinearLayout
+                    android:id="@+id/healthcareImage"
+                    android:layout_width="350dp"
+                    android:layout_height="110dp"
+                    android:background="@drawable/ligh_green_square"
+                    android:gravity="center"
+                    android:onClick="goToHealthcareQuizPage">
+
+                    <ImageView
+                        android:layout_width="80dp"
+                        android:layout_height="100dp"
+                        android:layout_gravity="center"
+                        android:src="@drawable/healthcare_icon" />
+                </LinearLayout>
+
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:orientation="horizontal">
+
+                <LinearLayout
+                    android:id="@+id/educationImage"
+                    android:layout_width="350dp"
+                    android:layout_height="110dp"
+                    android:background="@drawable/ligh_green_square"
+                    android:gravity="center"
+                    android:onClick="goToIntelligenceQuizPage">
+
+                    <ImageView
+                        android:layout_width="80dp"
+                        android:layout_height="90dp"
+                        android:src="@drawable/thinking_icon" />
+                </LinearLayout>
+
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:orientation="horizontal"
+               >
+
+                <LinearLayout
+                    android:id="@+id/safetyImage"
+                    android:layout_width="350dp"
+                    android:layout_height="110dp"
+                    android:background="@drawable/ligh_green_square"
+                    android:gravity="center"
+                    android:onClick="goToSafetyQuiz">
+
+                    <ImageView
+                        android:layout_width="80dp"
+                        android:layout_height="90dp"
+                        android:layout_gravity="center"
+                        android:src="@drawable/safety" />
+                </LinearLayout>
+
+
+            </LinearLayout>
+
+
+
+        </LinearLayout>
+
+
+    </ScrollView>
+
+    <LinearLayout
+        android:id="@+id/menuBar"
+        android:layout_width="386dp"
+        android:layout_height="85dp"
+        android:layout_alignParentBottom="true"
+        android:layout_marginLeft="10dp"
+        android:layout_marginTop="10dp"
+        android:layout_marginRight="10dp"
+        android:layout_marginBottom="64dp"
+        android:background="@drawable/square"
+        android:layout_centerHorizontal="true">
+
+        <ImageView
+            android:layout_width="45dp"
+            android:layout_height="50dp"
+            android:layout_gravity="center"
+            android:layout_marginLeft="40dp"
+            android:onClick="goToHomePage"
+            android:src="@drawable/home_unselected" />
+
+        <ImageView
+            android:layout_width="55dp"
+            android:layout_height="match_parent"
+            android:layout_gravity="center"
+            android:layout_marginLeft="30dp"
+            android:onClick="goToQuizzes"
+            android:src="@drawable/quiz_selected" />
+
+        <ImageView
+            android:layout_width="60dp"
+            android:layout_height="50dp"
+            android:layout_gravity="center"
+            android:layout_marginLeft="30dp"
+            android:onClick="goToMessages"
+            android:src="@drawable/messages_unselected" />
+
+        <ImageView
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:layout_gravity="center"
+            android:layout_marginLeft="30dp"
+            android:onClick="goToProfile"
+            android:src="@drawable/profile_unselected" />
+    </LinearLayout>
+
+
+</RelativeLayout>

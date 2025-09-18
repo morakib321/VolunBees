@@ -1,0 +1,42 @@
+[
+  {
+    "questionText": "What should you do first if you discover a fire in a building?",
+    "correctAnswer": "Raise the alarm and evacuate immediately"
+  },
+  {
+    "questionText": "Which number should you call for emergency services?",
+    "correctAnswer": "911"
+  },
+  {
+    "questionText": "When crossing the road, what should you always do?",
+    "correctAnswer": "Look both ways before crossing"
+  },
+  {
+    "questionText": "What is the safest way to lift a heavy object?",
+    "correctAnswer": "Bend your knees and keep your back straight"
+  },
+  {
+    "questionText": "Why should you wear a helmet when riding a bike?",
+    "correctAnswer": "To protect your head in case of an accident"
+  },
+  {
+    "questionText": "What should you do if you find a suspicious package?",
+    "correctAnswer": "Do not touch it and notify authorities"
+  },
+  {
+    "questionText": "How often should you check smoke detectors at home?",
+    "correctAnswer": "At least once a month"
+  },
+  {
+    "questionText": "What is the correct way to stop, drop, and roll?",
+    "correctAnswer": "Stop moving, drop to the ground, and roll to smother flames"
+  },
+  {
+    "questionText": "What should you avoid doing during an earthquake?",
+    "correctAnswer": "Standing near windows or heavy objects"
+  },
+  {
+    "questionText": "Why is it important to keep emergency exits clear?",
+    "correctAnswer": "To ensure quick and safe evacuation"
+  }
+]

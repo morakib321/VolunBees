@@ -1,0 +1,163 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/background"
+    tools:context=".EducationQuizzes">
+
+    <LinearLayout
+        android:id="@+id/headingLayout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:gravity="center"
+        android:background="@drawable/heading"
+        android:layout_marginBottom="25dp"
+        android:paddingTop="25dp"
+        android:paddingBottom="8dp">
+
+        <ImageView
+            android:id="@+id/logoImage"
+            android:onClick="goToHomePage"
+            android:layout_width="48dp"
+            android:layout_height="48dp"
+            android:contentDescription="App Logo"
+            android:src="@drawable/beige_logo" />
+
+
+    </LinearLayout>
+
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Education Quizzes"
+        android:layout_below="@id/headingLayout"
+        android:layout_centerHorizontal="true"
+        android:fontFamily="@font/concert_one_regular"
+        android:textSize="30dp"
+        android:textColor="@color/darkGreen"/>
+    <FrameLayout
+        android:id="@+id/teacherImg"
+        android:onClick="goToTeacherQuiz"
+        android:layout_width="wrap_content"
+        android:layout_height="190dp"
+        android:layout_below="@id/headingLayout"
+        android:layout_marginTop="90dp"
+        android:layout_marginRight="40dp"
+        android:layout_marginLeft="40dp"
+        android:clickable="true">
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="180dp"
+            android:contentDescription="CPR image"
+            android:src="@drawable/teacher"
+            />
+
+
+        <!--Remember this:
+        Layout gravity would set the gravity of the text
+        WITHIN THE WHOLE LAYOUT
+        While gravity alone, it sets where the text will be
+        WITHIN its wrapped content or whatever -->
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="bottom"
+            android:background="@drawable/heading"
+            android:fontFamily="@font/concert_one_regular"
+            android:paddingLeft="20dp"
+            android:paddingTop="8dp"
+            android:paddingBottom="8dp"
+            android:text="Are you better than a TEACHER?"
+            android:textColor="@color/beige"
+            android:textSize="20sp"
+            android:textStyle="bold" />
+    </FrameLayout>
+
+    <FrameLayout
+        android:layout_width="wrap_content"
+        android:layout_height="190dp"
+        android:layout_below="@id/headingLayout"
+        android:layout_marginTop="310dp"
+        android:layout_marginRight="40dp"
+        android:layout_marginLeft="40dp"
+        android:onClick="goTo5thGraderQuiz"
+        >
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:contentDescription="CPR image"
+            android:src="@drawable/cpr_image" />
+
+
+        <!--Remember this:
+        Layout gravity would set the gravity of the text
+        WITHIN THE WHOLE LAYOUT
+        While gravity alone, it sets where the text will be
+        WITHIN its wrapped content or whatever -->
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="bottom"
+            android:background="@drawable/heading"
+            android:fontFamily="@font/concert_one_regular"
+            android:paddingLeft="20dp"
+            android:paddingTop="8dp"
+            android:paddingBottom="8dp"
+            android:text="Smarter than a 5th grader?"
+            android:textColor="@color/beige"
+
+            android:textSize="30sp"
+            android:textStyle="bold" />
+    </FrameLayout>
+
+    <LinearLayout
+        android:layout_width="386dp"
+        android:layout_height="85dp"
+        android:layout_alignParentBottom="true"
+        android:layout_marginLeft="10dp"
+        android:layout_marginTop="30dp"
+        android:layout_marginRight="10dp"
+        android:layout_marginBottom="64dp"
+        android:background="@drawable/square"
+        android:layout_centerHorizontal="true">
+
+        <ImageView
+            android:layout_width="45dp"
+            android:layout_height="50dp"
+            android:layout_gravity="center"
+            android:layout_marginLeft="40dp"
+            android:onClick="goToHomePage"
+            android:src="@drawable/home_unselected" />
+
+        <ImageView
+            android:layout_width="55dp"
+            android:layout_height="match_parent"
+            android:layout_gravity="center"
+            android:layout_marginLeft="30dp"
+            android:onClick="goToQuizzes"
+            android:src="@drawable/quiz_selected" />
+
+        <ImageView
+            android:layout_width="60dp"
+            android:layout_height="50dp"
+            android:layout_gravity="center"
+            android:layout_marginLeft="30dp"
+            android:onClick="goToMessages"
+            android:src="@drawable/messages_unselected" />
+
+        <ImageView
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:layout_gravity="center"
+            android:layout_marginLeft="30dp"
+            android:onClick="goToProfile"
+            android:src="@drawable/profile_unselected" />
+    </LinearLayout>
+</RelativeLayout>

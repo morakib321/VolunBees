@@ -1,0 +1,122 @@
+[
+  {
+    "questionText": "Which language has the most native speakers?",
+    "correctAnswer": "Mandarin Chinese"
+  },
+  {
+    "questionText": "What is the only even prime number?",
+    "correctAnswer": "2"
+  },
+  {
+    "questionText": "Who painted the ceiling of the Sistine Chapel?",
+    "correctAnswer": "Michelangelo"
+  },
+  {
+    "questionText": "What’s the capital of Iceland?",
+    "correctAnswer": "Reykjavík"
+  },
+  {
+    "questionText": "How many bones are in the adult human body?",
+    "correctAnswer": "206"
+  },
+  {
+    "questionText": "In computing, what does 'CPU' stand for?",
+    "correctAnswer": "Central Processing Unit"
+  },
+  {
+    "questionText": "Which planet has the most moons?",
+    "correctAnswer": "Saturn"
+  },
+  {
+    "questionText": "What gas do plants absorb?",
+    "correctAnswer": "Carbon Dioxide"
+  },
+  {
+    "questionText": "What is the smallest country in the world?",
+    "correctAnswer": "Vatican City"
+  },
+  {
+    "questionText": "What is the square root of 169?",
+    "correctAnswer": "13"
+  },
+  {
+    "questionText": "What year did World War II end?",
+    "correctAnswer": "1945"
+  },
+  {
+    "questionText": "Which continent is the Sahara Desert on?",
+    "correctAnswer": "Africa"
+  },
+  {
+    "questionText": "Which vitamin do you get from sunlight?",
+    "correctAnswer": "Vitamin D"
+  },
+  {
+    "questionText": "Which is the only mammal capable of true flight?",
+    "correctAnswer": "Bat"
+  },
+  {
+    "questionText": "What is the main language spoken in Brazil?",
+    "correctAnswer": "Portuguese"
+  },
+  {
+    "questionText": "Which ocean is the largest?",
+    "correctAnswer": "Pacific"
+  },
+  {
+    "questionText": "Who was the first person in space?",
+    "correctAnswer": "Yuri Gagarin"
+  },
+  {
+    "questionText": "What’s the longest river in the world?",
+    "correctAnswer": "Nile"
+  },
+  {
+    "questionText": "What is the currency of Japan?",
+    "correctAnswer": "Yen"
+  },
+  {
+    "questionText": "How many hearts does an octopus have?",
+    "correctAnswer": "Three"
+  },
+  {
+    "questionText": "What’s the freezing point of water?",
+    "correctAnswer": "0°C"
+  },
+  {
+    "questionText": "How many sides does a dodecagon have?",
+    "correctAnswer": "12"
+  },
+  {
+    "questionText": "Who discovered penicillin?",
+    "correctAnswer": "Alexander Fleming"
+  },
+  {
+    "questionText": "What is the largest internal organ in the human body?",
+    "correctAnswer": "Liver"
+  },
+  {
+    "questionText": "Which element is represented by the symbol 'K'?",
+    "correctAnswer": "Potassium"
+  },
+  {
+    "questionText": "Which country is known as the Land of the Rising Sun?",
+    "correctAnswer": "Japan"
+  },
+  {
+    "questionText": "What does DNA stand for?",
+    "correctAnswer": "Deoxyribonucleic Acid"
+  },
+  {
+    "questionText": "Which historical figure is known for his theory of relativity?",
+    "correctAnswer": "Albert Einstein"
+  },
+  {
+    "questionText": "What’s the national animal of Canada?",
+    "correctAnswer": "Beaver"
+  },
+  {
+    "questionText": "How many players are on a basketball team on the court?",
+    "correctAnswer": "5"
+  }
+]

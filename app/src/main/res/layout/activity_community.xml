@@ -1,0 +1,124 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/background"
+    android:orientation="vertical"
+    tools:context=".Community">
+
+    <LinearLayout
+        android:id="@+id/headingLayout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="5dp"
+        android:background="@drawable/heading"
+        android:gravity="center"
+        android:orientation="vertical"
+        android:paddingTop="25dp"
+        android:paddingBottom="8dp">
+
+        <ImageView
+            android:id="@+id/logoImage"
+            android:layout_width="48dp"
+            android:layout_height="48dp"
+            android:contentDescription="App Logo"
+            android:onClick="goToHomePage"
+            android:src="@drawable/beige_logo" />
+
+
+    </LinearLayout>
+
+
+    <EditText
+        android:id="@+id/postText"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:fontFamily="@font/concert_one_regular"
+        android:hint="What's on your mind?" />
+
+    <ImageView
+        android:id="@+id/postImage"
+        android:layout_width="match_parent"
+        android:layout_height="200dp"
+        android:scaleType="centerCrop"
+        android:src="@drawable/ic_launcher_background" />
+
+    <Button
+        android:id="@+id/chooseImageBtn"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="140dp"
+        android:backgroundTint="@color/darkGreen"
+        android:fontFamily="@font/concert_one_regular"
+        android:text="Choose Image" />
+
+    <Button
+        android:id="@+id/postBtn"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="160dp"
+        android:backgroundTint="@color/darkGreen"
+        android:fontFamily="@font/concert_one_regular"
+        android:text="Post" />
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="347dp">
+
+        <LinearLayout
+            android:id="@+id/postsLayout"
+            android:layout_width="match_parent"
+            android:layout_height="100dp"
+
+            android:orientation="vertical" />
+    </ScrollView>
+
+
+    <LinearLayout
+        android:id="@+id/menuBar"
+        android:layout_width="386dp"
+        android:layout_height="85dp"
+        android:layout_alignParentBottom="true"
+        android:layout_marginLeft="10dp"
+        android:layout_marginTop="10dp"
+        android:layout_marginRight="10dp"
+        android:layout_marginBottom="64dp"
+        android:background="@drawable/square"
+        android:layout_centerHorizontal="true">
+
+        <ImageView
+            android:layout_width="45dp"
+            android:layout_height="50dp"
+            android:layout_gravity="center"
+            android:layout_marginLeft="40dp"
+            android:onClick="goToHomePage"
+            android:src="@drawable/home_unselected" />
+
+        <ImageView
+            android:layout_width="55dp"
+            android:layout_height="match_parent"
+            android:layout_gravity="center"
+            android:layout_marginLeft="30dp"
+            android:onClick="goToQuizzes"
+            android:src="@drawable/quiz_unselected" />
+
+        <ImageView
+            android:layout_width="60dp"
+            android:layout_height="50dp"
+            android:layout_gravity="center"
+            android:layout_marginLeft="30dp"
+            android:onClick="goToMessages"
+            android:src="@drawable/messages_selected" />
+
+        <ImageView
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:layout_gravity="center"
+            android:layout_marginLeft="30dp"
+            android:onClick="goToProfile"
+            android:src="@drawable/profile_unselected" />
+    </LinearLayout>
+</LinearLayout>

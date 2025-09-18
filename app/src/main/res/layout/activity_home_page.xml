@@ -1,0 +1,363 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/background"
+    tools:context=".HomePage">
+
+
+    <LinearLayout
+        android:id="@+id/headingLayout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:gravity="center"
+        android:background="@drawable/heading"
+        android:layout_marginBottom="25dp"
+        android:paddingTop="25dp"
+        android:paddingBottom="8dp">
+
+        <ImageView
+            android:id="@+id/logoImage"
+            android:onClick="goToHomePage"
+            android:layout_width="48dp"
+            android:layout_height="48dp"
+            android:contentDescription="App Logo"
+            android:src="@drawable/beige_logo" />
+
+
+    </LinearLayout>
+
+
+
+    <!--  Search bar  -->
+    <EditText
+        android:id="@+id/searchBar"
+        android:layout_below="@id/headingLayout"
+        android:fontFamily="@font/concert_one_regular"
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:hint="Search"
+        android:layout_marginLeft="20dp"
+        android:layout_marginRight="20dp"/>
+    <!--  Welcome  -->
+    <TextView
+        android:id="@+id/welcomeText"
+        android:fontFamily="@font/concert_one_regular"
+        android:layout_marginLeft="20dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/searchBar"
+        android:layout_marginTop="10dp"
+        android:text="Welcome, [name]!"
+        android:textSize="40sp"
+        android:textStyle="bold" />
+    <!--  We Need You Title  -->
+    <TextView
+        android:id="@+id/weNeedYouTitle"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/welcomeText"
+        android:layout_marginTop="16dp"
+        android:paddingStart="20dp"
+        android:text="@string/we_need_you"
+        android:fontFamily="@font/concert_one_regular"
+        android:textColor="#B86F2C"
+        android:textSize="25sp" />
+    <!--  Event Card with Arrows  -->
+    <ImageButton
+        android:id="@+id/leftArrowEvent"
+        android:layout_width="40dp"
+        android:layout_height="40dp"
+        android:layout_below="@+id/weNeedYouTitle"
+        android:layout_alignParentStart="true"
+        android:layout_marginTop="40dp"
+        android:background="@android:color/transparent"
+        android:onClick="onLeftEvent"
+        android:src="@android:drawable/ic_media_previous" />
+
+    <RelativeLayout
+        android:id="@+id/eventCard"
+        android:layout_width="220dp"
+        android:layout_height="100dp"
+        android:layout_below="@+id/weNeedYouTitle"
+        android:layout_marginStart="10dp"
+        android:layout_marginTop="10dp"
+        android:layout_marginEnd="10dp"
+        android:layout_toStartOf="@+id/rightArrowEvent"
+        android:layout_toEndOf="@+id/leftArrowEvent"
+        android:background="@drawable/ligh_green_square">
+
+        <TextView
+            android:id="@+id/eventTitle"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:text="Event Name"
+            android:textSize="16sp"
+            android:textStyle="bold" />
+
+    </RelativeLayout>
+
+    <ImageButton
+        android:id="@+id/rightArrowEvent"
+        android:layout_width="40dp"
+        android:layout_height="40dp"
+        android:layout_below="@+id/weNeedYouTitle"
+        android:layout_alignParentEnd="true"
+        android:layout_marginTop="40dp"
+        android:background="@android:color/transparent"
+        android:onClick="onRightEvent"
+        android:src="@android:drawable/ic_media_next" />
+    <!--  Achievements Section  -->
+    <!-- Achievements Title -->
+    <TextView
+        android:id="@+id/achievementsTitle"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/eventCard"
+        android:layout_marginTop="24dp"
+        android:layout_marginStart="20dp"
+        android:text="@string/achievements"
+        android:textColor="#B86F2C"
+        android:fontFamily="@font/concert_one_regular"
+        android:textSize="25sp" />
+
+    <!-- Achievements Section: RelativeLayout for perfect alignment -->
+    <RelativeLayout
+        android:id="@+id/achievementsContainer"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/achievementsTitle"
+        android:layout_marginTop="10dp">
+
+        <ImageButton
+            android:id="@+id/leftArrowAch"
+            android:layout_width="40dp"
+            android:layout_height="120dp"
+            android:layout_alignParentStart="true"
+            android:background="@android:color/transparent"
+            android:onClick="onLeftAchievement"
+            android:src="@android:drawable/ic_media_previous" />
+
+        <LinearLayout
+            android:id="@+id/achievements_layout"
+            android:layout_width="0dp"
+            android:layout_height="120dp"
+            android:layout_centerInParent="true"
+            android:orientation="horizontal"
+            android:layout_toEndOf="@id/leftArrowAch"
+            android:layout_toStartOf="@id/rightArrowAch"
+            android:gravity="center"
+            android:layout_marginStart="6dp"
+            android:layout_marginEnd="6dp"
+            >
+
+
+
+            <!-- First Aid Master Card -->
+            <FrameLayout
+                android:id="@+id/card_first_aid"
+                android:layout_width="0dp"
+                android:layout_weight="1"
+                android:layout_height="match_parent"
+                android:layout_margin="4dp"
+                android:background="@drawable/ligh_green_square">
+
+                <ImageView
+                    android:id="@+id/first_aid_icon"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:src="@drawable/firstaid"
+                    android:scaleType="centerInside"
+                    android:alpha="0.4" />
+
+                <ImageView
+                    android:id="@+id/first_aid_lock"
+                    android:layout_width="40dp"
+                    android:layout_height="40dp"
+                    android:src="@drawable/lock"
+                    android:layout_gravity="center" />
+
+                <TextView
+                    android:id="@+id/first_aid_title"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="First Aid Master"
+                    android:textStyle="bold"
+                    android:textColor="@android:color/black"
+                    android:background="@drawable/square"
+                    android:textAlignment="center"/>
+            </FrameLayout>
+
+            <!-- Wizard Card -->
+            <FrameLayout
+                android:id="@+id/card_wizard"
+                android:layout_width="0dp"
+                android:layout_weight="1"
+                android:layout_height="match_parent"
+                android:layout_margin="4dp"
+                android:background="@drawable/ligh_green_square">
+
+                <ImageView
+                    android:id="@+id/wizard_icon"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:src="@drawable/wizard"
+                    android:scaleType="centerInside"
+                    android:alpha="0.4" />
+                <ImageView
+                    android:id="@+id/wizard_lock"
+                    android:layout_width="40dp"
+                    android:layout_height="40dp"
+                    android:src="@drawable/lock"
+                    android:layout_gravity="center" />
+                <TextView
+                    android:id="@+id/wizard_title"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Wizard"
+                    android:textStyle="bold"
+                    android:textSize="18dp"
+                    android:textColor="@android:color/black"
+                    android:background="@drawable/square"
+                    android:textAlignment="center"/>
+            </FrameLayout>
+
+            <!-- Safety Expert Card -->
+            <FrameLayout
+                android:id="@+id/card_safety"
+                android:layout_width="0dp"
+                android:layout_weight="1"
+                android:layout_height="match_parent"
+                android:layout_margin="4dp"
+                android:background="@drawable/ligh_green_square">
+
+                <ImageView
+                    android:id="@+id/safety_icon"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:src="@drawable/safety_expert"
+                    android:scaleType="centerInside"
+                    android:alpha="0.4" />
+                <ImageView
+                    android:id="@+id/safety_lock"
+                    android:layout_width="40dp"
+                    android:layout_height="40dp"
+                    android:src="@drawable/lock"
+                    android:layout_gravity="center" />
+                <TextView
+                    android:id="@+id/safety_title"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Safety Expert"
+                    android:textStyle="bold"
+                    android:textSize="15dp"
+                    android:textColor="@android:color/black"
+                    android:background="@drawable/square"
+                    android:textAlignment="center"/>
+            </FrameLayout>
+        </LinearLayout>
+
+        <ImageButton
+            android:id="@+id/rightArrowAch"
+            android:layout_width="40dp"
+            android:layout_height="120dp"
+            android:onClick="onRightAchievement"
+            android:layout_alignParentEnd="true"
+            android:background="@android:color/transparent"
+            android:src="@android:drawable/ic_media_next" />
+    </RelativeLayout>
+    <!--  Leaderboard Section   -->
+    <TextView
+        android:id="@+id/leaderboardTitle"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/achievementsContainer"
+        android:layout_marginTop="18dp"
+        android:paddingStart="20dp"
+        android:text="@string/leaderboard"
+        android:textColor="#B86F2C"
+        android:fontFamily="@font/concert_one_regular"
+        android:textSize="25sp" />
+
+    <ScrollView
+        android:id="@+id/leaderboardScroll"
+        android:layout_width="match_parent"
+        android:layout_height="140dp"
+        android:layout_below="@id/leaderboardTitle"
+        android:layout_marginStart="20dp"
+        android:layout_marginEnd="20dp"
+        android:layout_marginTop="10dp"
+        >
+
+    <TableLayout
+        android:id="@+id/leaderboardLayout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:stretchColumns="1"
+          android:background="@android:color/transparent"/>
+</ScrollView>
+
+    <!--Bottom Nav   -->
+
+    <LinearLayout
+        android:layout_width="386dp"
+        android:layout_height="85dp"
+        android:layout_alignParentBottom="true"
+        android:layout_marginLeft="10dp"
+        android:layout_marginTop="30dp"
+        android:layout_marginRight="10dp"
+        android:layout_marginBottom="64dp"
+        android:background="@drawable/square"
+        android:layout_centerHorizontal="true">
+
+        <ImageView
+            android:layout_width="45dp"
+            android:layout_height="50dp"
+            android:layout_gravity="center"
+            android:layout_marginLeft="40dp"
+            android:onClick="goToHomePage"
+            android:src="@drawable/home_selected" />
+
+        <ImageView
+            android:layout_width="55dp"
+            android:layout_height="match_parent"
+            android:layout_gravity="center"
+            android:layout_marginLeft="30dp"
+            android:onClick="goToQuizzes"
+            android:src="@drawable/quiz_unselected" />
+
+        <ImageView
+            android:layout_width="60dp"
+            android:layout_height="50dp"
+            android:layout_gravity="center"
+            android:layout_marginLeft="30dp"
+            android:onClick="goToMessages"
+            android:src="@drawable/messages_unselected" />
+
+        <ImageView
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:layout_gravity="center"
+            android:layout_marginLeft="30dp"
+            android:onClick="goToProfile"
+            android:src="@drawable/profile_unselected" />
+    </LinearLayout>
+
+    <!--  + Button for Seekers Only  -->
+    <ImageButton
+        android:id="@+id/addEventBtn"
+        android:layout_width="56dp"
+        android:layout_height="56dp"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentBottom="true"
+        android:layout_margin="12dp"
+        android:background="@android:color/holo_orange_light"
+        android:onClick="onAddEvent"
+        android:src="@drawable/add_icon"
+        android:visibility="gone" />
+</RelativeLayout>

@@ -1,0 +1,134 @@
+<?xml version="1.0" encoding="utf-8"?>
+    <LinearLayout
+        xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:app="http://schemas.android.com/apk/res-auto"
+        xmlns:tools="http://schemas.android.com/tools"
+        android:id="@+id/main"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:background="@drawable/background"
+        tools:context=".SafetyAwarenessQuiz">
+    <TextView
+        android:id="@+id/header"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/heading"
+        android:fontFamily="@font/concert_one_regular"
+        android:paddingLeft="20dp"
+        android:paddingTop="30dp"
+        android:paddingBottom="20dp"
+        android:text="Are you safety aware?"
+        android:textColor="@color/beige"
+        android:textColorHighlight="@color/beige"
+        android:textSize="25dp" />
+
+
+        <TextView
+            android:id="@+id/timerText"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_marginTop="50dp"
+            android:layout_marginBottom="5dp"
+            android:fontFamily="@font/concert_one_regular"
+            android:text="Time left: 6s"
+            android:textColor="@color/darkGreen"
+            android:textSize="20sp" />
+
+        <LinearLayout
+            android:layout_width="350dp"
+            android:layout_height="700dp"
+            android:layout_margin="30dp"
+            android:orientation="vertical"
+            android:padding="20dp">
+
+            <TextView
+                android:id="@+id/questionText"
+                android:layout_width="match_parent"
+                android:layout_height="200dp"
+                android:layout_marginBottom="30dp"
+                android:background="@drawable/square"
+                android:fontFamily="@font/concert_one_regular"
+                android:gravity="center"
+                android:padding="10dp"
+                android:textColor="@color/beige"
+                android:textSize="23sp" />
+
+            <TextView
+                android:id="@+id/scoreText"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:fontFamily="@font/concert_one_regular"
+                android:text="Your final score: 0/50"
+                android:textColor="@color/darkGreen"
+                android:textSize="22sp" />
+
+            <RadioGroup
+                android:id="@+id/optionsGroup"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <RadioButton
+                    android:id="@+id/option1"
+                    android:layout_width="300dp"
+                    android:layout_height="wrap_content"
+                    android:background="@drawable/ligh_green_square"
+                    android:fontFamily="@font/concert_one_regular"
+                    android:textColor="@color/beige" />
+
+                <RadioButton
+                    android:id="@+id/option2"
+                    android:layout_width="300dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="10dp"
+                    android:background="@drawable/ligh_green_square"
+                    android:fontFamily="@font/concert_one_regular"
+                    android:textColor="@color/beige" />
+
+                <RadioButton
+                    android:id="@+id/option3"
+                    android:layout_width="300dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="10dp"
+                    android:background="@drawable/ligh_green_square"
+                    android:fontFamily="@font/concert_one_regular"
+                    android:textColor="@color/beige" />
+
+                <RadioButton
+                    android:id="@+id/option4"
+                    android:layout_width="300dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="10dp"
+                    android:background="@drawable/ligh_green_square"
+                    android:fontFamily="@font/concert_one_regular"
+                    android:textColor="@color/beige" />
+            </RadioGroup>
+
+            <Button
+                android:id="@+id/nextBtn"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="100dp"
+                android:layout_marginTop="20dp"
+                android:backgroundTint="@color/yellow"
+                android:fontFamily="@font/concert_one_regular"
+                android:text="Next"
+                android:textColor="@color/darkGreen" />
+
+            <Button
+                android:id="@+id/startBtn"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_marginTop="40dp"
+                android:layout_marginBottom="40dp"
+                android:backgroundTint="@color/yellow"
+                android:fontFamily="@font/concert_one_regular"
+                android:gravity="center"
+                android:text="Start Quiz"
+                android:textColor="@color/darkGreen"
+                android:textSize="30sp" />
+        </LinearLayout>
+    </LinearLayout>

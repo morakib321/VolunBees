@@ -1,0 +1,131 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/background"
+    tools:context=".CPR_Quiz">
+
+    <TextView
+        android:id="@+id/header"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/heading"
+        android:fontFamily="@font/concert_one_regular"
+        android:paddingTop="30dp"
+        android:paddingLeft="20dp"
+        android:paddingBottom="10dp"
+        android:text="CPR Quiz"
+        android:textColor="@color/beige"
+        android:textColorHighlight="@color/beige"
+        android:textSize="25dp" />
+
+    <Button
+        android:id="@+id/startButton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_centerVertical="true"
+        android:backgroundTint="@color/lightGreen"
+        android:onClick="cprQuiz"
+        android:text="Start Quiz"
+        android:textSize="30dp" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center_horizontal"
+            android:orientation="vertical"
+            android:padding="16dp">
+
+            <ImageView
+                android:id="@+id/guyOnFloorImg"
+                android:layout_width="600dp"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="30dp"
+                android:src="@drawable/guy_on_floor"
+                android:visibility="gone"
+             />
+
+            <TextView
+                android:id="@+id/questionTxt"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:background="@drawable/ligh_green_square"
+                android:fontFamily="@font/concert_one_regular"
+                android:gravity="center"
+                android:padding="5dp"
+                android:textSize="15sp"
+                android:visibility="gone" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/countChestCompressionTxt"
+                android:layout_marginTop="10dp"
+                android:text="0"
+                android:visibility="gone"
+                android:textSize="30dp"
+                android:fontFamily="@font/concert_one_regular"/>
+
+            <RadioGroup
+                android:id="@+id/radioGroup"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="7dp"
+                android:layout_marginBottom="30dp"
+                android:orientation="horizontal"
+                android:visibility="gone"
+             >
+
+                <RadioButton
+                    android:id="@+id/option1"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="10dp"
+                    android:fontFamily="@font/concert_one_regular" />
+
+                <RadioButton
+                    android:id="@+id/option2"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="10dp"
+                    android:fontFamily="@font/concert_one_regular" />
+
+                <RadioButton
+                    android:id="@+id/option3"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="10dp"
+                    android:fontFamily="@font/concert_one_regular" />
+
+                <RadioButton
+                    android:id="@+id/option4"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="10dp"
+                    android:fontFamily="@font/concert_one_regular" />
+            </RadioGroup>
+
+
+        </LinearLayout>
+
+
+    <Button
+        android:id="@+id/submitBtn"
+        android:layout_width="45dp"
+        android:layout_height="45dp"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentBottom="true"
+        android:onClick="checkAnswer"
+        android:backgroundTint="@color/yellow"
+        android:layout_margin="10dp"
+        android:drawableTop="@drawable/outline_check_24"
+        android:visibility="gone"/>
+
+</RelativeLayout>
+
