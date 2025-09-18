@@ -6,6 +6,35 @@ The name **VolunBee** combines the words "Volunteer" and "Bee". Bees symbolize t
 
 ---
 
+### Problem Statement 
+
+Many communities struggle to connect volunteers with people in need efficiently. VolunBee addresses this by providing a centralized platform where:
+
+	•	Volunteers can find opportunities to help and share their knowledge.
+ 
+	•	Help seekers can request assistance for events, tasks, or emergency needs.
+ 
+	•	Communities can promote events, track volunteer engagement, and encourage participation through achievements and leaderboards.
+
+The app’s goal is to encourage community engagement while making volunteering more accessible and rewarding.
+### Tech Stack
+	•	Platform: Android
+	•	IDE: Android Studio
+	•	Language: Java 
+	•	Database: SQLite (local storage)
+	•	UI Components: XML layouts, Spinners, Buttons, Notifications
+
+### Features
+	•	User authentication with login and registration
+	•	Password strength notifications
+	•	Age validation (18+ users only)
+	•	Volunteer and Help Seeker roles with different home pages
+	•	Event posting and participation
+	•	Achievement tracking and leaderboard
+	•	Quizzes for Healthcare, Intelligence, and Safety Awareness
+	•	Community page for messages and image posts
+	•	Profile page showing user stats, hours, and quiz scores
+
 ## Application Output
 
 ### Login Page
@@ -246,15 +275,21 @@ The Quizzes Page features different genres of quizzes: **Healthcare/First Aid**,
 - Displays user’s **name**, **volunteering hours**, and **quiz scores**.  
 - Provides a summary of achievements and progress within the app.
 
-### Key Features
+## How to Use the Project
+	1.	Clone or download the repository
+  2.	Open in Android Studio:
+     
+	    •	Launch Android Studio → File > Open → select the VolunBee project folder.
+  4.	Build the project:
+     
+    	•	Wait for Gradle to finish syncing and building.
 
-- **Volunteer and Help Seeker roles**  
-- **Event posting and participation**  
-- **Achievement tracking and leaderboard**  
-- **Password strength notifications**  
-- **Age restriction validation**  
-- **Clean and intuitive user interface**  
+	4.	Run the app:
 
----
+	    •	Connect an Android device or start an emulator.
+	    •	Click the Run (green arrow) button in Android Studio.
 
+	5.	Explore the app:
 
+    	•	Log in or register as a volunteer or help seeker.
+	    •	Check out events, quizzes, achievements, and the community page.
